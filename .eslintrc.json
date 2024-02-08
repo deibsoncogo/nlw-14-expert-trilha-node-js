@@ -1,5 +1,6 @@
 {
   "rules": {
+    "no-restricted-syntax": "off",
     "indent": "off",
     "camelcase": "off",
     "no-console": "off",
