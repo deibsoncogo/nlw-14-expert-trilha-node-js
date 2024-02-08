@@ -6,6 +6,8 @@ Utilizando um conjunto de tecnologias de ponta, destacando-se Node JS, TypeScrip
 # Execução
 O projeto não está em execução na nuvem, mais você pode utilizar estas orientações para executar ele junto do arquivo do Insomnia para as requisições.
 
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Next%20Level%20Week%20Expert%20%7C%20Trilha%20Node%20JS&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fdeibsoncogo%2Fnlw-expert-trilha-node-js%2Fmaster%2Fdocs%2Finsomnia.json)
+
 ## Instalação
 Primeiramente instale as dependências utilizando o `NPM`.
 ```bash
