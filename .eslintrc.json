@@ -1,0 +1,112 @@
+{
+  "rules": {
+    "indent": "off",
+    "camelcase": "off",
+    "no-console": "off",
+    "import/order": "off",
+    "no-empty-function": "off",
+    "no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "no-useless-constructor": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never"
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true,
+        "multiline": true,
+        "minProperties": 15
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 90,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreComments": true,
+        "ignorePattern": "import.+from.+"
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "groups": [
+          [
+            "/^@fastify/",
+            "/^nest/",
+            "/^adonis/",
+            "/^express/",
+            "/^typeorm/",
+            "/^prisma/"
+          ],
+          "module",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ],
+          [
+            "/style/",
+            "/css/"
+          ],
+          "/^@//"
+        ],
+        "newlinesBetween": "never",
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ]
+  },
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers"
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
