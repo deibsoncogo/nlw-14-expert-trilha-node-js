@@ -16,6 +16,11 @@ npm ci
 
 Configure as variáveis de ambiente criando um arquivo chamado de `.env` e utilizando o arquivo `.env.example` para configurar ele.
 
+Agora utilize o `Docker` para criar o ambiente do banco de dados de forma local.
+```bash
+docker-compose up -d
+```
+
 Certifique se que o banco de dados está funcionando localmente ou remoto antes de executar os migrations.
 ```bash
 npx prisma migrate deploy
